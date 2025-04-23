@@ -2,8 +2,8 @@
 
 # Variables
 VERSION_FILE="version.txt"
-DOCKER_USERNAME="karankumar15"
-API_IMAGE_NAME="edu-hub"
+DOCKER_USERNAME="iamsanuj"
+API_IMAGE_NAME="recipe"
 
 # Ensure version file exists
 if [ ! -f "$VERSION_FILE" ]; then

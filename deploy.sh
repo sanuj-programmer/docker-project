@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-STACK_NAME="my_stack"
+STACK_NAME="recipe"
 COMPOSE_FILE="docker-compose.yml"
 
 # Function to clean up existing stack and swarm
