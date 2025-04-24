@@ -5,9 +5,19 @@ services:
     image: iamsanuj/recipe:latest
     build:
       context: .
+    container_name: recipe_container
     ports:
-      - "3000:3000"
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host
+    networks:
+      - recipe_overlay
     deploy:
       replicas: 1
       restart_policy:
         condition: on-failure
+
+networks:
+  recipe_overlay:
+    driver: overlay
